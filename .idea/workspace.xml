@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="">
+    <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="新增了common模块-20241129">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/advice/CommonExceptionAdvice.java" afterDir="false" />
@@ -75,6 +75,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,11 +181,15 @@
       <workItem from="1732800075094" duration="184000" />
       <workItem from="1732800315068" duration="710000" />
       <workItem from="1732802249755" duration="5274000" />
-      <workItem from="1732885585189" duration="7173000" />
+      <workItem from="1732885585189" duration="7560000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增了common模块-20241129" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增了common模块-20241129" />
   </component>
 </project>
