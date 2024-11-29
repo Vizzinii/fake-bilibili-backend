@@ -1,0 +1,10 @@
+server:
+  port: 8079
+
+spring:
+  application:
+    name: api-service
+
+feign:
+  hystrix:
+    enabled: true  # 启用 Feign 的断路器（如果需要）

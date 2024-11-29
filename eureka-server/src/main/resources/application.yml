@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: eureka-server
+    # 单机版配置
+eureka:
+  client:
+    register-with-eureka: true # 作为客户端需要注册到Eureka
+    fetch-registry: true  # 作为客户端需要从Eureka获取注册信息
+    service-url: # 客户端注册地址
+      defaultZone: http://localhost:8888/eureka
+  instance:
+  # 优先使用该服务的IP地址注册到Eureka，在生产环境建议改为true
+    prefer-ip-address: true
