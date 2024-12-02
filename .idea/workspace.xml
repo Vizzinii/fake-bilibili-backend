@@ -5,77 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="新增了common模块-20241129">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/advice/CommonExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/chat/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/chat/ChatSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/CommentNotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/Dynamic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/DynamicToUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/LikeNotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/Follow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/IdCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/Privilege.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/VideoEnsemble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/AddToEnsemble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Collect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/CollectGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Danmaku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Like.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Play.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/video_production/Video.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/video_production/VideoData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/file/CustomMultipartFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/LikeNoticeAddOrDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/RecommendVideo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/UploadVideo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/BizIllegalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/CommonException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/DbException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/ForbiddenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/UnauthorizedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/filter/TimeBasedFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/handle/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/handle/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/chat/ChatMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/chat/ChatSessionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/CommentNoticeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/DynamicMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/DynamicToUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/LikeNoticeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/FollowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/PrivilegeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/VideoEnsembleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/AddToEnsembleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CollectGroupMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CollectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CommentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/DanmakuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/LikeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/PlayMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/video_production/VideoDataMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/video_production/VideoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/serializer/RelativeTimeSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/serializer/RemoveTSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/CollUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/WebUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/06d10486-1436-49c2-9b1a-51f399b506ad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/06d10486-1436-49c2-9b1a-51f399b506ad.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a58d17a-60da-428f-b700-fd5f8510c18c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a58d17a-60da-428f-b700-fd5f8510c18c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2b82412-914f-4b45-a5eb-0e6a7b06ce7e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2b82412-914f-4b45-a5eb-0e6a7b06ce7e/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/06d10486-1436-49c2-9b1a-51f399b506ad.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a58d17a-60da-428f-b700-fd5f8510c18c.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,22 +25,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Vizzinii"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Vizzinii&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/caigui88/fake-bilibili-backend.git",
-    "accountId": "d815f24d-e199-4ba9-bd35-8f340b01dbcc"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/caigui88/fake-bilibili-backend.git&quot;,
+    &quot;accountId&quot;: &quot;d815f24d-e199-4ba9-bd35-8f340b01dbcc&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2op8p1QJi7Zil9AVaV5mLy9G3Yq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -118,7 +50,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feat__Vizzinii/v1.1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/project/idea/bilibili-backend-reconstruction/eureka-server/src/main/resources",
     "node.js.detected.package.eslint": "true",
@@ -126,7 +58,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
