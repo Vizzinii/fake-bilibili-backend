@@ -5,8 +5,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="新增了common模块-20241129">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/06d10486-1436-49c2-9b1a-51f399b506ad.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a58d17a-60da-428f-b700-fd5f8510c18c.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/dto/AddOrUpdateEnsembleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/dto/AddToEnsembleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/dto/DeleteEnsembleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/dto/DeleteFromEnsembleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/dto/EditUserCenterPrivilegeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/dto/EditUserInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/dto/FollowDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/dto/UserInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/AllVideoInEnsembleVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/EnsembleVideoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/FansAndIdolCountVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/IdolOrFansVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/PrivilegeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/RecentlyLikeVideoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/SelfCenterContentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/SelfCollectVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/SelfVideoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/vo/VideoInEnsembleVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/controller/UserInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/mapper/UserCenterServiceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/UserInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/advice/CommonExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/advice/CommonExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/api/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/chat/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/chat/entity/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/chat/ChatSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/chat/entity/ChatSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/CommentNotice.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/notice/entity/CommentNotice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/Dynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/notice/entity/Dynamic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/DynamicToUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/notice/entity/DynamicToUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/LikeNotice.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/notice/entity/LikeNotice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/entity/Follow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/IdCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/entity/IdCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/Privilege.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/entity/Privilege.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/VideoEnsemble.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/user/entity/VideoEnsemble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/AddToEnsemble.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/audience_reactions/AddToEnsemble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Collect.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/audience_reactions/Collect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/CollectGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/audience_reactions/CollectGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/audience_reactions/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Danmaku.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/audience_reactions/Danmaku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Like.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/audience_reactions/Like.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/audience_reactions/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/video_production/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/video_production/Video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/video_production/VideoData.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/video/entity/video_production/VideoData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/file/CustomMultipartFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/api/file/CustomMultipartFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/LikeNoticeAddOrDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/api/pojo/LikeNoticeAddOrDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/RecommendVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/api/pojo/RecommendVideo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/UploadVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/domain/api/pojo/UploadVideo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/BadRequestException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/BizIllegalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/exception/BizIllegalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/CommonException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/exception/CommonException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/DbException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/exception/DbException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/ForbiddenException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/exception/ForbiddenException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/UnauthorizedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/exception/UnauthorizedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/filter/TimeBasedFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/filter/TimeBasedFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/handle/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/handle/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/handle/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/handle/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/chat/ChatMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/chat/ChatMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/chat/ChatSessionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/chat/ChatSessionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/CommentNoticeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/notice/CommentNoticeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/DynamicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/notice/DynamicMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/DynamicToUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/notice/DynamicToUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/LikeNoticeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/notice/LikeNoticeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/FollowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/user/FollowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/PrivilegeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/user/PrivilegeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/user/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/VideoEnsembleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/user/VideoEnsembleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/AddToEnsembleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/AddToEnsembleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CollectGroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/CollectGroupMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CollectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/CollectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/CommentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/DanmakuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/DanmakuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/LikeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/LikeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/PlayMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/PlayMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/video_production/VideoDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/video_production/VideoDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/video_production/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/video_production/VideoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/serializer/RelativeTimeSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/serializer/RelativeTimeSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/serializer/RemoveTSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/serializer/RemoveTSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/CollUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/util/CollUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/util/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/util/WebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minio-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/minio-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/config/Knife4jConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/config/Knife4jConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +129,15 @@
   <component name="ProjectId" id="2op8p1QJi7Zil9AVaV5mLy9G3Yq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feat__Vizzinii/v1.1",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/project/idea/bilibili-backend-reconstruction/eureka-server/src/main/resources",
+    "last_opened_file_path": "D:/project/idea/fake-bilibili-backend/user-server/src/main/java/com/bilibili/user",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,24 +158,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\idea\bilibili-backend-reconstruction\eureka-server\src\main\resources" />
-      <recent name="D:\project\idea\bilibili-backend-reconstruction\minio-service\src\main\resources" />
-      <recent name="D:\project\idea\bilibili-backend-reconstruction\user-service\src\main\java\com\bilibili" />
-      <recent name="D:\project\idea\bilibili-backend-reconstruction\user-service\src\main\java\com\caigui\bilibili" />
-      <recent name="D:\project\idea\bilibili-backend-reconstruction\user-service\src\main\resources" />
+      <recent name="D:\project\idea\fake-bilibili-backend\user-server\src\main\java\com\bilibili\user" />
+      <recent name="D:\project\idea\fake-bilibili-backend\common\src\main\java\com\bilibili\common\domain\chat" />
+      <recent name="D:\project\idea\fake-bilibili-backend\common\src\main\java\com\bilibili\common\domain\notice" />
+      <recent name="D:\project\idea\fake-bilibili-backend\common\src\main\java\com\bilibili\common\domain\video" />
+      <recent name="D:\project\idea\fake-bilibili-backend\user-server\src\main\java\com\bilibili" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.bilibili" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bilibili.service" />
       <recent name="com.caigui.bilibili.constant" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -114,6 +200,7 @@
       <workItem from="1732800315068" duration="710000" />
       <workItem from="1732802249755" duration="5274000" />
       <workItem from="1732885585189" duration="7560000" />
+      <workItem from="1733143137490" duration="7710000" />
     </task>
     <servers />
   </component>

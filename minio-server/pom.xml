@@ -19,6 +19,13 @@
     </properties>
 
     <dependencies>
+        <!--common-->
+        <dependency>
+            <groupId>com.bilibili</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- spring-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -36,6 +43,7 @@
             <artifactId>minio</artifactId>
         </dependency>
 
+        <!--远程调用-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
