@@ -16,4 +16,7 @@ public interface UserCenterServiceMapper {
 
     @Select("SELECT t.cover,t.intro,t.id,t.nickname,SUM(t2.like_count) AS likeCount,SUM(t2.play_count) AS playCount   FROM user t LEFT JOIN video t1 ON (t1.user_id = t.id) LEFT JOIN video_data t2 ON (t2.video_id = t1.id) WHERE   (t.id = #{visitedId})")
     UserInfoDTO getUserInfo(Integer visitedId);
+
+
+    /**/
 }
