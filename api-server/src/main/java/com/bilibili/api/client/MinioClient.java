@@ -9,6 +9,12 @@ import org.springframework.web.multipart.MultipartFile;
 @FeignClient("minio-server")
 public interface MinioClient {
 
+    /**
+     * 上传文件
+     * @param bucketName
+     * @param file
+     * @return
+     */
     @PostMapping("/minio/upload")
     Result upload(@RequestParam("bucketName") String bucketName , @RequestParam("file") MultipartFile file);
 

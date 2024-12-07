@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @TableName("video")
 @Accessors(chain = true)
 public class Video {
+
     @TableId(type = IdType.AUTO)
     private Integer id;
 
@@ -18,15 +19,20 @@ public class Video {
 
     @TableField("user_id")
     private Integer userId;
+
     @TableField("intro")
     private String intro;
 
     @TableField("length")
     private String length;
+
     @TableField("name")
     private String name;
+
     @TableField("url")
     private String url;
+
     @TableField("cover")
     private String videoCover;
+
 }

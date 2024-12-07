@@ -34,8 +34,10 @@ public class UploadVideoDTO {
         return new Dynamic().setVideoId(video.getId()).setVideoName(video.getName())
                 .setAuthorId(user.getId());
     }
+
     public Dynamic toCoverDynamic(User user, Video video){
         return new Dynamic().setVideoId(video.getId()).setVideoCover(video.getVideoCover()).setVideoName(video.getName())
                 .setAuthorId(user.getId());
     }
+
 }

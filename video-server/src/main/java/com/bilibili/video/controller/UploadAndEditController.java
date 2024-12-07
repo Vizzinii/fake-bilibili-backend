@@ -88,5 +88,4 @@ public class UploadAndEditController {
         log.info("\n");
         return uploadAndEditService.getProcessor(resumableIdentifier,resumableChunkNumber);
     }
-
 }

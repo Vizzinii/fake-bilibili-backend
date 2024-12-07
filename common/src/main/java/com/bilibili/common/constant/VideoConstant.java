@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+
 public class VideoConstant {
     public static final String HAS_PLAY="已经新增过播放记录了";
     public static final String SQL="limit";

@@ -362,7 +362,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
     }
 
     /**
-     * 查询进度
+     * 获取处理进度
      * @param resumableIdentifier
      * @param resumableChunkNumber
      * @return
