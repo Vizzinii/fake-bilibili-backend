@@ -20,12 +20,17 @@ public class Result<T> {
         this.data = data;
     }
 
-    private static <T> Result<T> success(String msg, T data) {
-        return new Result<>(SUCCESS_CODE, msg, data);
+    public static <T> Result<T> success() {
+        return success("操作成功◕‿◕");
     }
 
     public static <T> Result<T> success(String msg) {
         return success(msg, null);
+    }
+
+
+    private static <T> Result<T> success(String msg, T data) {
+        return new Result<>(SUCCESS_CODE, msg, data);
     }
 
     public static <T> Result<T> success(T data) {

@@ -42,7 +42,6 @@
             <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
         </dependency>
-
         <!--远程调用-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

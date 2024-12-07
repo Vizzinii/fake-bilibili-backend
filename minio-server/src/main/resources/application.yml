@@ -2,6 +2,8 @@ server:
   port: 8080
 
 spring:
+  application:
+    name: minio-server
   servlet:
     multipart:
       max-file-size: 10MB
@@ -14,7 +16,7 @@ spring:
     password: root
 
 minio:
-  url: http://192.168.219.129:9000
+  endpoint: http://192.168.246.129:9000
   access-name: minioadmin
   secret-key: minioadmin
 
@@ -33,7 +35,6 @@ logging:
     dateformat: HH:mm:ss:SSS
   file:
     path: "logs/${spring.application.name}"
-
 
 knife4j:
     enable: true
