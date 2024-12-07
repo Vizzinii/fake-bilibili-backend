@@ -1,9 +1,13 @@
 package com.bilibili.common.constant;
 
+import com.bilibili.common.domain.video.pojo.UploadPart;
+import com.bilibili.common.domain.video.vo.FirstPageVideoVO;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
 
 public class VideoConstant {
     public static final String HAS_PLAY="已经新增过播放记录了";
@@ -22,6 +26,6 @@ public class VideoConstant {
     public static final String OPERATION_TYPE_ADD="add";
     public static final String OPERATION_TYPE_DELETE="delete";
     public static final String OPERATION_TYPE_UPDATE="update";
-    public static final Map<Integer, List<FirstPageVideoResponse>> map=new ConcurrentHashMap<>();
+    public static final Map<Integer, List<FirstPageVideoVO>> map=new ConcurrentHashMap<>();
     public static Map<String, UploadPart> uploadPartMap=new HashMap<>();
 }

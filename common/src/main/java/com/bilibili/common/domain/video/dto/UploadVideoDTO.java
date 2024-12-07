@@ -6,7 +6,7 @@ import com.bilibili.common.domain.video.entity.video_production.Video;
 import io.swagger.annotations.ApiModelProperty;
 import org.springframework.beans.BeanUtils;
 
-public class UploadVideoDto {
+public class UploadVideoDTO {
 
     @ApiModelProperty("视频路径")
     private String url;
@@ -18,7 +18,7 @@ public class UploadVideoDto {
     private String intro;
 
     @ApiModelProperty("作者id")
-    private int userId;
+    private Integer userId;
 
     @ApiModelProperty("视频封面")
     private String videoCover;
@@ -34,8 +34,10 @@ public class UploadVideoDto {
         return new Dynamic().setVideoId(video.getId()).setVideoName(video.getName())
                 .setAuthorId(user.getId());
     }
+
     public Dynamic toCoverDynamic(User user, Video video){
-        return new Dynamic().setVideoId(video.getId()).setVideoCover(video.getCover()).setVideoName(video.getName())
+        return new Dynamic().setVideoId(video.getId()).setVideoCover(video.getVideoCover()).setVideoName(video.getName())
                 .setAuthorId(user.getId());
     }
+
 }
