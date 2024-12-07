@@ -11,16 +11,22 @@ import java.util.Map;
 
 @Data
 public class EditVideoDTO {
+
     @ApiModelProperty("视频id")
     private Integer id;
+
     @ApiModelProperty("上传的视频文件")
     private MultipartFile file;
+
     @ApiModelProperty("视频名称")
     private String name;
+
     @ApiModelProperty("视频介绍")
     private String intro;
+
     @ApiModelProperty("作者id")
     private Integer userId;
+
     @ApiModelProperty("视频封面")
     private MultipartFile cover;
 

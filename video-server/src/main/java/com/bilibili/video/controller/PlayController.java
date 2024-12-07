@@ -15,13 +15,18 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * 播放视频、历史播放
+ */
 @RestController
-@Api(tags = "播放视频、历史播放相关接口")
+@Api(tags = "视频相关接口")
 @RequestMapping("/play")
 @Slf4j
 public class PlayController {
+
     @Resource
     PlayService playService;
+
     @ApiOperation("删除历史播放视频")
     @PostMapping("/deleteHistoryVideo")
     public Result<Boolean> deleteHistoryVideo(@RequestBody DeleteHistoryVideoDTO deleteHistoryVideoRequest) {
@@ -44,27 +49,28 @@ public class PlayController {
     @GetMapping("/getHistoryVideo/{userId}")
     @ApiOperation("获取首页历史视频")
     public Result<List<HistoryVideoVO>> getHistoryVideo(@PathVariable Integer userId) {
-        log.info("1");
+        log.info("获取首页历史视频");
         return playService.getHistoryVideo(userId);
     }
 
     @GetMapping("/getDetailVideo/{videoId}/{userId}/{collectGroupId}")
     @ApiOperation("视频详情页的视频信息")
     public Result<DetailVideoVO> getDetailVideo(@PathVariable Integer videoId, @PathVariable Integer userId, @PathVariable String collectGroupId) {
-        log.info("1");
+        log.info("视频详情页的视频信息");
         return playService.getDetailVideo(videoId, userId, collectGroupId);
     }
 
     @GetMapping("/getCommendVideo/{videoId}")
     @ApiOperation("获取推荐视频")
     public Result<List<CommendVideoVO>> getRecommendVideo(@PathVariable String videoId) {
-        log.info("1");
+        log.info("获取推荐视频");
         return playService.getRecommendVideo(videoId);
     }
 
     @GetMapping("/getFirstPageVideo/{count}")
     @ApiOperation("首页视频列表")
     public Result<List<FirstPageVideoVO>> getFirstPageVideoResponse(@PathVariable Integer count) {
+        log.info("首页视频列表");
         return playService.getFirstPageVideoResponse(count);
     }
 }

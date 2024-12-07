@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 public class CommentVO {
     @ApiModelProperty("顶级评论")
-    public TopCommentVO topCommentResponse=new TopCommentVO();
+    public TopCommentVO topCommentVO =new TopCommentVO();
     @ApiModelProperty("后续层评论")
     public List<CommentDetailVO> commentDetailResponses=new ArrayList<>();
 }
