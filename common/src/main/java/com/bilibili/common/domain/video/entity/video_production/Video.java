@@ -28,5 +28,5 @@ public class Video {
     @TableField("url")
     private String url;
     @TableField("cover")
-    private String cover;
+    private String videoCover;
 }
