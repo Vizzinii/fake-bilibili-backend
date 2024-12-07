@@ -1,4 +1,4 @@
-package com.bilibili.common.client;
+package com.bilibili.api.client;
 
 import com.bilibili.common.domain.api.pojo.LikeNoticeAddOrDelete;
 import com.bilibili.common.domain.api.pojo.UploadVideo;

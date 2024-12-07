@@ -1,4 +1,4 @@
-package com.bilibili.common.client;
+package com.bilibili.api.client;
 
 import com.bilibili.common.domain.api.pojo.UploadVideo;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -6,7 +6,9 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 
 @Component

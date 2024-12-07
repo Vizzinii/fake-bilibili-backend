@@ -1,3 +1,4 @@
+/*
 package com.bilibili.user.config;
 
 import io.minio.MinioClient;
@@ -33,3 +34,4 @@ public class MinIOConfig {
     }
 
 }
+*/
