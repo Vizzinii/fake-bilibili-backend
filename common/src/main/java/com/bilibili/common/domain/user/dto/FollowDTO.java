@@ -1,4 +1,5 @@
 package com.bilibili.common.domain.user.dto;
+
 import com.bilibili.common.domain.user.entity.Follow;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;

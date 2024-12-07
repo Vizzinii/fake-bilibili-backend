@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="新增common模块-20241130">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="新增修改用户信息方法与实现，新增了common模块下client包-20241207">
+      <change afterPath="$PROJECT_DIR$/api-server/src/main/java/com/bilibili/client/SearchClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/src/main/java/com/bilibili/client/SendNoticeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/src/main/java/com/bilibili/client/VideoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/client/CustomMultipartFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/client/SearchClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/client/SendNoticeClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/client/VideoClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/config/MinIOConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/config/MinIOConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/impl/UserInfoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Exception" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -32,12 +41,12 @@
     &quot;assignee&quot;: &quot;Vizzinii&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/caigui88/fake-bilibili-backend.git&quot;,
-    &quot;accountId&quot;: &quot;d815f24d-e199-4ba9-bd35-8f340b01dbcc&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Vizzinii/fake-bilibili-backend.git",
+    "accountId": "d815f24d-e199-4ba9-bd35-8f340b01dbcc"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -46,31 +55,35 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project/idea/fake-bilibili-backend/user-server/src/main/java/com/bilibili/user&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.api-server [clean].executor": "Run",
+    "Maven.api-server [install].executor": "Run",
+    "Maven.bilibili [clean].executor": "Run",
+    "Maven.bilibili [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/project/idea/fake-bilibili-backend/user-server/src/main/java/com/bilibili/user",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql_aurora_aws&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora_aws",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\idea\fake-bilibili-backend\user-server\src\main\java\com\bilibili\user" />
@@ -90,8 +103,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -116,6 +129,7 @@
       <workItem from="1732802249755" duration="5274000" />
       <workItem from="1732885585189" duration="7560000" />
       <workItem from="1733143137490" duration="8751000" />
+      <workItem from="1733493521534" duration="16936000" />
     </task>
     <task id="LOCAL-00001" summary="新增了common模块-20241129">
       <option name="closed" value="true" />
@@ -125,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733199855961</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增修改用户信息方法与实现，新增了common模块下client包-20241207">
+      <option name="closed" value="true" />
+      <created>1733507670470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733507670470</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +193,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增了common模块-20241129" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增了common模块-20241129" />
+    <MESSAGE value="新增修改用户信息方法与实现，新增了common模块下client包-20241207" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增修改用户信息方法与实现，新增了common模块下client包-20241207" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

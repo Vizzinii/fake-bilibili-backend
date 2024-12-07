@@ -16,6 +16,7 @@
         <module>api-server</module>
         <module>eureka-server</module>
         <module>common</module>
+        <module>video-server</module>
     </modules>
 
     <parent>

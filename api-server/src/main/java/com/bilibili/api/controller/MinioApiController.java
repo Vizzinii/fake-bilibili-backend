@@ -1,6 +1,6 @@
-package com.bilibili.controller;
+package com.bilibili.api.controller;
 
-import com.bilibili.client.MinioApiClient;
+import com.bilibili.api.client.MinioApiClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

@@ -2,15 +2,14 @@ package com.bilibili.user.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
-import com.bilibili.client.MinioApiClient;
-import com.bilibili.common.client.SendNoticeClient;
+import com.bilibili.api.client.SendNoticeClient;
 import com.bilibili.common.domain.user.entity.Follow;
 import com.bilibili.common.domain.user.entity.User;
 import com.bilibili.common.mapper.user.FollowMapper;
 import com.bilibili.common.mapper.user.UserMapper;
 import com.bilibili.common.util.Result;
 import com.bilibili.common.domain.user.dto.UserInfoDTO;
-import com.bilibili.controller.MinioApiController;
+import com.bilibili.api.controller.MinioApiController;
 import com.bilibili.user.mapper.UserCenterServiceMapper;
 import com.bilibili.user.service.UserInfoService;
 import com.github.yulichang.wrapper.MPJLambdaWrapper;
@@ -25,7 +24,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import static com.bilibili.user.constant.Constant.*;
+import static com.bilibili.common.constant.UserConstant.*;
+
+//import static com.bilibili.user.constant.Constant.*;
 
 @Service
 public class UserInfoServiceImpl implements UserInfoService {

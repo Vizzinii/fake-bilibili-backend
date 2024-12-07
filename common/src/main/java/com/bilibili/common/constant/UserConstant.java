@@ -1,6 +1,6 @@
-package com.bilibili.user.constant;
+package com.bilibili.common.constant;
 
-public class Constant {
+public class UserConstant {
     public static final String TABLE_NAME="table";
     public static final String USER_TABLE_NAME="user";
     public static final String OPERATION_TYPE="type";

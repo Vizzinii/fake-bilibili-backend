@@ -1,7 +1,7 @@
 package com.bilibili.common.domain.user.dto;
 
+import com.bilibili.common.constant.UserConstant;
 import com.bilibili.common.domain.user.entity.User;
-import com.bilibili.user.constant.Constant;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,14 +22,14 @@ public class EditUserInfoDTO {
     }
     public Map<String,Object> toMap(){
         Map<String,Object> map=new HashMap<>();
-        map.put(Constant.TABLE_NAME, Constant.USER_TABLE_NAME);
-        map.put(Constant.OPERATION_TYPE, Constant.OPERATION_TYPE_UPDATE);
-        map.put(Constant.TABLE_ID,id);
+        map.put(UserConstant.TABLE_NAME, UserConstant.USER_TABLE_NAME);
+        map.put(UserConstant.OPERATION_TYPE, UserConstant.OPERATION_TYPE_UPDATE);
+        map.put(UserConstant.TABLE_ID,id);
         if(nickname!=null){
-            map.put(Constant.USER_NICKNAME,nickname);
+            map.put(UserConstant.USER_NICKNAME,nickname);
         }
         if(intro!=null){
-            map.put(Constant.USER_INTRO,intro);
+            map.put(UserConstant.USER_INTRO,intro);
         }
         return map;
     }

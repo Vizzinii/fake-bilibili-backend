@@ -1,4 +1,4 @@
-package com.bilibili.client;
+package com.bilibili.api.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.DeleteMapping;
