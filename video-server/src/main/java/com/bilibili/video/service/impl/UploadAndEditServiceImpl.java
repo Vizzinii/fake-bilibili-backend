@@ -5,6 +5,7 @@ import cn.hutool.core.io.IoUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.bilibili.api.client.MinioClient;
 import com.bilibili.api.client.SendNoticeClient;
+import com.bilibili.api.client.UserClient;
 import com.bilibili.common.domain.api.file.CustomMultipartFile;
 import com.bilibili.common.domain.api.pojo.UploadVideo;
 import com.bilibili.common.domain.user.entity.User;
@@ -61,7 +62,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
     VideoMapper videoMapper;
 
     @Resource
-    UserMapper userMapper;
+    UserClient userClient;
 
     @Resource
     VideoDataMapper videoDataMapper;
@@ -111,13 +112,13 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
                 //minioClient.uploadImgFile(coverFileName, coverMultipartFile.getInputStream(), imgContentType);
 
                 client.sendUploadNotice(new UploadVideo().setVideoId(video.getId()).setVideoName(video.getName()).setUrl(url).setHasCover(true));
-                User user = userMapper.selectById(uploadVideoDTO.toEntity().getUserId());
+                User user = userClient.selectById(uploadVideoDTO.toEntity().getUserId());
                 client.dynamicNotice(uploadVideoDTO.toCoverDynamic(user, video));
             } else {
                 videoMapper.insert(video);
                 videoDataMapper.insert(new VideoData().setVideoId(video.getId()));
                 client.sendUploadNotice(new UploadVideo().setVideoId(video.getId()).setVideoName(video.getName()).setUrl(url).setHasCover(false));
-                User user = userMapper.selectById(uploadVideoDTO.toEntity().getUserId());
+                User user = userClient.selectById(uploadVideoDTO.toEntity().getUserId());
                 client.dynamicNotice(uploadVideoDTO.toNoCoverDynamic(user, video));
             }
 

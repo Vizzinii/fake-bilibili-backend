@@ -23,4 +23,7 @@ public interface UserClient {
 
     @GetMapping("/getTableData/getUser")
     List<User> getUser();
+
+    @GetMapping("/getTableData/selectUserById")
+    User selectById(Integer id);
 }

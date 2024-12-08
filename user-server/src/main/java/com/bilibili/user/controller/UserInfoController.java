@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/user")
-@Api(tags = "用户信息")
+@Api(tags = "用户信息相关接口")
 @Slf4j
 public class UserInfoController {
 

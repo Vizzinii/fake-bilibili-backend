@@ -23,7 +23,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/createCenter")
-@Api(tags = "视频上传和编辑")
+@Api(tags = "视频上传和编辑相关接口")
 @CrossOrigin(value = "*")
 @Slf4j
 public class UploadAndEditController {

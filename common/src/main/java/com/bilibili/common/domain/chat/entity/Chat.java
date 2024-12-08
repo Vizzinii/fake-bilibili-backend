@@ -25,6 +25,8 @@ public class Chat {
 
     @TableId(type = IdType.AUTO)
     private Integer id;
+
     @TableField(value = "status",fill = FieldFill.INSERT)
     private Integer status;
+
 }
