@@ -22,7 +22,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/getAllTableData")
-@Api(tags = "查看所有表里的数据")
+@Api(tags = "获取库里所有表相关接口")
 @Slf4j
 public class GetAllTableDataController {
 

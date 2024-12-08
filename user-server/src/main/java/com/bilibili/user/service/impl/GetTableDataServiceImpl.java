@@ -46,4 +46,9 @@ public class GetTableDataServiceImpl implements GetTableDataService {
     public List<User> getUser() {
         return userMapper.selectList(null);
     }
+
+    @Override
+    public User selectById(Integer id) {
+        return userMapper.selectById(id);
+    }
 }

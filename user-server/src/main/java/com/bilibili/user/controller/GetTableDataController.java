@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/getTableData")
-@Api(tags = "获取表格数据")
+@Api(tags = "获取表格数据相关接口")
 @Slf4j
 public class GetTableDataController {
 
@@ -62,5 +62,15 @@ public class GetTableDataController {
         log.info("\n");
         log.info("\n");
         return getTableDataService.getUser();
+    }
+
+    @GetMapping("/selectUserById")
+    @ApiOperation("远程调用user-server根据id查询用户")
+    public User selectById(Integer id) {
+        log.info("正在远程调用user-server根据id查询用户");
+        log.info("\n");
+        log.info("\n");
+        log.info("\n");
+        return getTableDataService.selectById(id);
     }
 }

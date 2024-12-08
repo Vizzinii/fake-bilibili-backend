@@ -15,4 +15,6 @@ public interface GetTableDataService {
     List<Follow> getFollow();
 
     List<User> getUser();
+
+    User selectById(Integer id);
 }
