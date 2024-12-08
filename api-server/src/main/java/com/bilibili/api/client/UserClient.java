@@ -12,18 +12,18 @@ import java.util.List;
 @FeignClient(name = "user-server")
 public interface UserClient {
 
-    @GetMapping("/getTableData/getPrivilege")
+    @GetMapping("/user/getTableData/getPrivilege")
     List<Privilege> getPrivilege();
 
-    @GetMapping("/getTableData/getVideoEnsemble")
+    @GetMapping("/user/getTableData/getVideoEnsemble")
     List<VideoEnsemble> getVideoEnsemble();
 
-    @GetMapping("/getTableData/getFollow")
+    @GetMapping("/user/getTableData/getFollow")
     List<Follow> getFollow();
 
-    @GetMapping("/getTableData/getUser")
+    @GetMapping("/user/getTableData/getUser")
     List<User> getUser();
 
-    @GetMapping("/getTableData/selectUserById")
+    @GetMapping("/user/getTableData/selectUserById")
     User selectById(Integer id);
 }

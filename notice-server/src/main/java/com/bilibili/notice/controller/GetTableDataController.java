@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@RequestMapping("/getTableData")
+@RequestMapping("/notice/getTableData")
 @Api(tags = "获取表格数据相关接口")
 @Slf4j
 public class GetTableDataController {

@@ -11,13 +11,13 @@ import java.util.List;
 @FeignClient(name = "notice-server")
 public interface NoticeClient {
 
-    @GetMapping("/getTableData/getLikeNotice")
+    @GetMapping("/notice/getTableData/getLikeNotice")
     List<LikeNotice> getLikeNotice();
 
-    @GetMapping("/getTableData/getCommentNotice")
+    @GetMapping("/notice/getTableData/getCommentNotice")
     List<CommentNotice> getCommentNotice();
 
-    @GetMapping("/getTableData/getDynamicToUser")
+    @GetMapping("/notice/getTableData/getDynamicToUser")
     List<DynamicToUser> getDynamicToUser();
 
 }
