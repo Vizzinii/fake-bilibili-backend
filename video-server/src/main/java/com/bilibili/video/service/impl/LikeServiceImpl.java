@@ -6,7 +6,7 @@ import com.bilibili.common.domain.video.dto.LikeDTO;
 import com.bilibili.common.domain.video.entity.audience_reactions.Like;
 import com.bilibili.common.domain.video.entity.video_production.Video;
 import com.bilibili.common.domain.video.entity.video_production.VideoData;
-import com.bilibili.common.mapper.video.audience_reactions.LikeMapper;
+import com.bilibili.video.mapper.visitor.LikeMapper;
 import com.bilibili.common.util.Result;
 import com.bilibili.video.service.LikeService;
 import org.springframework.stereotype.Service;

@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.bilibili.common.domain.video.dto.AddDanmakuDTO;
 import com.bilibili.common.domain.video.entity.audience_reactions.Danmaku;
 import com.bilibili.common.domain.video.vo.DanmakuVO;
-import com.bilibili.common.mapper.video.audience_reactions.DanmakuMapper;
+import com.bilibili.video.mapper.visitor.DanmakuMapper;
 import com.bilibili.common.util.Result;
 import com.bilibili.video.service.DanmakuService;
 import org.springframework.stereotype.Service;

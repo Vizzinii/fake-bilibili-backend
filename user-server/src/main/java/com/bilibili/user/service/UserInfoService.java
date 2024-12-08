@@ -8,5 +8,5 @@ import org.springframework.web.multipart.MultipartFile;
 public interface UserInfoService {
     Result<UserInfoDTO> getUserInfo(Integer selfId, Integer visitedId);
 
-    Result<Boolean> editSelfInfo(MultipartFile file, Integer userId, String nickname, String introduction) throws Exception;
+    Result<Boolean> editUserInfo(MultipartFile file, Integer userId, String nickname, String introduction) throws Exception;
 }

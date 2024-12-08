@@ -16,8 +16,8 @@ import com.bilibili.common.domain.video.entity.video_production.Video;
 import com.bilibili.common.domain.video.entity.video_production.VideoData;
 import com.bilibili.common.domain.video.pojo.UploadPart;
 import com.bilibili.common.mapper.user.UserMapper;
-import com.bilibili.common.mapper.video.video_production.VideoDataMapper;
-import com.bilibili.common.mapper.video.video_production.VideoMapper;
+import com.bilibili.video.mapper.blogger.VideoDataMapper;
+import com.bilibili.video.mapper.blogger.VideoMapper;
 import com.bilibili.common.util.Result;
 import com.bilibili.video.service.UploadAndEditService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -47,7 +47,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 
-import static com.bilibili.common.constant.UserConstant.*;
 import static com.bilibili.common.constant.VideoConstant.*;
 import static com.bilibili.common.constant.VideoConstant.OPERATION_TYPE;
 import static com.bilibili.common.constant.VideoConstant.OPERATION_TYPE_UPDATE;
