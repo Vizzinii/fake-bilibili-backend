@@ -16,6 +16,8 @@
         <module>eureka-server</module>
         <module>common</module>
         <module>video-server</module>
+        <module>notice-server</module>
+        <module>chat-server</module>
     </modules>
 
     <parent>
