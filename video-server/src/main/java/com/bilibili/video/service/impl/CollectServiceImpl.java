@@ -13,6 +13,7 @@ import com.bilibili.video.mapper.visitor.CollectMapper;
 import com.bilibili.common.util.Result;
 import com.bilibili.video.mapper.VideoServiceMapper;
 import com.bilibili.video.service.CollectService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class CollectServiceImpl implements CollectService {
 
     @Resource

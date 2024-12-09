@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/notice/DBChange")
-@Api(tags = "发送数据库变更通知相关接口")
+@Api(tags = "发送数据库变更通知相关接口 Producer")
 public class SendDBChangeController {
 
     @Resource

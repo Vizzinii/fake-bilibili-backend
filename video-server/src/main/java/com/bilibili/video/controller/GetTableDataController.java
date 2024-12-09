@@ -31,4 +31,8 @@ public class GetTableDataController {
         return getTableDataService.selectCommentJoinCount(commentLikeLambdaQueryWrapper);
     }
 
+    @GetMapping("/updateById")
+    public void updateById(Video video){
+        getTableDataService.updateById(video);
+    }
 }

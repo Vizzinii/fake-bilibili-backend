@@ -8,4 +8,6 @@ public interface GetTableDataService {
     long selectVideoJoinCount(MPJLambdaWrapper<Video> videoLikeLambdaQueryWrapper);
 
     long selectCommentJoinCount(MPJLambdaWrapper<Comment> commentLikeLambdaQueryWrapper);
+
+    void updateById(Video video);
 }

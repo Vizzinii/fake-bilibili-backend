@@ -6,6 +6,7 @@ import com.bilibili.common.domain.api.pojo.UploadVideo;
 import com.bilibili.video.service.VideoEncodeService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -14,6 +15,7 @@ import java.io.InputStream;
 
 import static com.bilibili.common.constant.VideoConstant.*;
 
+@Service
 public class VideoEncodeServiceImpl implements VideoEncodeService {
 
     @Resource
