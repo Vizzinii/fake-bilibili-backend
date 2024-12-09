@@ -1,5 +1,6 @@
 package com.bilibili.user.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.bilibili.common.domain.user.entity.Follow;
 import com.bilibili.common.domain.user.entity.Privilege;
 import com.bilibili.common.domain.user.entity.User;
@@ -50,5 +51,10 @@ public class GetTableDataServiceImpl implements GetTableDataService {
     @Override
     public User selectById(Integer id) {
         return userMapper.selectById(id);
+    }
+
+    @Override
+    public List<Follow> selectFollowList(LambdaQueryWrapper<Follow> wrapper) {
+        return followMapper.selectList(wrapper);
     }
 }

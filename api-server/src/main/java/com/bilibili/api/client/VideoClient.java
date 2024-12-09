@@ -34,4 +34,7 @@ public interface VideoClient {
     @GetMapping("/video/getTableData/selectCommentJoinCount")
     long selectCommentJoinCount(MPJLambdaWrapper<Comment> commentLikeLambdaQueryWrapper);
 
+    @PostMapping("/video/getTableData/updateById")
+    void updateById(Video video);
+
 }

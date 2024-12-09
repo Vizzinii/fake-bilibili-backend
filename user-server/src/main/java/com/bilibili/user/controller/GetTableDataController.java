@@ -1,5 +1,6 @@
 package com.bilibili.user.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.bilibili.common.domain.user.entity.Follow;
 import com.bilibili.common.domain.user.entity.Privilege;
 import com.bilibili.common.domain.user.entity.User;
@@ -24,7 +25,7 @@ public class GetTableDataController {
     @Resource
     GetTableDataService getTableDataService;
 
-    @GetMapping("/getPrivilege")
+    @GetMapping("/getPrivilegeAll")
     @ApiOperation("远程调用user-server查看所有个人主页开放权限")
     public List<Privilege> getPrivilege(){
         log.info("正在远程调用user-server查看所有个人主页开放权限");
@@ -34,7 +35,7 @@ public class GetTableDataController {
         return getTableDataService.getPrivilege();
     }
 
-    @GetMapping("/getVideoEnsemble")
+    @GetMapping("/getVideoEnsembleAll")
     @ApiOperation("远程调用user-server查看视频合集")
     public List<VideoEnsemble> getVideoEnsemble(){
         log.info("正在远程调用user-server查看视频合集");
@@ -44,7 +45,7 @@ public class GetTableDataController {
         return getTableDataService.getVideoEnsemble();
     }
 
-    @GetMapping("/getFollow")
+    @GetMapping("/getFollowAll")
     @ApiOperation("远程调用user-server查看关注表")
     public List<Follow> getFollow() {
         log.info("正在远程调用user-server查看关注表");
@@ -54,7 +55,7 @@ public class GetTableDataController {
         return getTableDataService.getFollow();
     }
 
-    @GetMapping("/getUser")
+    @GetMapping("/getUserAll")
     @ApiOperation("远程调用user-server查看用户表")
     public List<User> getUser() {
         log.info("正在远程调用user-server查看用户表");
@@ -72,5 +73,13 @@ public class GetTableDataController {
         log.info("\n");
         log.info("\n");
         return getTableDataService.selectById(id);
+    }
+
+    @GetMapping("/selectFollowList")
+    @ApiOperation("远程调用user-server根据条件查询关注表")
+    public List<Follow> selectFollowList(LambdaQueryWrapper<Follow> wrapper){
+        log.info("正在远程调用user-server根据条件查询关注表");
+        log.info("\n");
+        return getTableDataService.selectFollowList(wrapper);
     }
 }

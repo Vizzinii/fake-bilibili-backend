@@ -20,7 +20,7 @@ import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/notice")
-@Api(tags = "发送通知相关接口")
+@Api(tags = "发送通知相关接口 Producer")
 @Slf4j
 public class SendNoticeController {
 

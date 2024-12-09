@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@ComponentScan(basePackages = {"com.bilibili.common" , "com.bilibili.notice"})
+@ComponentScan(basePackages = {"com.bilibili.common" , "com.bilibili.notice" , "com.bilibili.api"})
 @MapperScan(basePackages = {"com.bilibili.notice.mapper"})
 public class NoticeApplication {
     public static void main(String[] args) {

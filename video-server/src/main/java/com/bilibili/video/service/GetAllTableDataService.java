@@ -1,7 +1,5 @@
 package com.bilibili.video.service;
 
-import com.bilibili.api.client.NoticeClient;
-import com.bilibili.api.client.UserClient;
 import com.bilibili.common.domain.notice.entity.CommentNotice;
 import com.bilibili.common.domain.notice.entity.DynamicToUser;
 import com.bilibili.common.domain.notice.entity.LikeNotice;
@@ -10,121 +8,42 @@ import com.bilibili.common.domain.user.entity.Privilege;
 import com.bilibili.common.domain.user.entity.User;
 import com.bilibili.common.domain.user.entity.VideoEnsemble;
 import com.bilibili.common.domain.video.entity.audience_reactions.*;
-import com.bilibili.common.domain.video.entity.video_production.Video;
 import com.bilibili.common.domain.video.entity.video_production.VideoData;
-
-
-import com.bilibili.video.mapper.blogger.VideoDataMapper;
-import com.bilibili.video.mapper.blogger.VideoMapper;
-import com.bilibili.video.mapper.visitor.*;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @Service
-public class GetAllTableDataService {
+public interface GetAllTableDataService {
+    List<Privilege> getPrivilege();
 
-    @Resource
-    UserClient userClient;
+    List<LikeNotice> getLikeNotice();
 
-    @Resource
-    NoticeClient noticeClient;
+    List<CommentNotice> getCommentNotice();
 
-    @Resource
-    CollectMapper collectMapper;
+    String getVideo();
 
-    @Resource
-    CollectGroupMapper collectGroupMapper;
+    List<VideoEnsemble> getVideoEnsemble();
 
-    @Resource
-    PlayMapper playMapper;
+    List<AddToEnsemble> getAddToEnsemble();
 
-    @Resource
-    CommentMapper commentMapper;
+    List<VideoData> getVideoData();
 
-    @Resource
-    DanmakuMapper danmakuMapper;
+    List<CollectGroup> getCollectGroup();
 
-    @Resource
-    LikeMapper likeMapper;
+    List<Comment> getComment();
 
-    @Resource
-    VideoDataMapper videoDataMapper;
+    List<Danmaku> getDanmaku();
 
-    @Resource
-    AddToEnsembleMapper addToEnsembleMapper;
+    List<Like> getCommentLike();
 
-    @Resource
-    VideoMapper videoMapper;
+    List<Follow> getFollow();
 
+    List<User> getUser();
 
-    public List<Privilege> getPrivilege() {
-        return userClient.getPrivilege();
-    }
+    List<Play> getHistoryPlay();
 
-    public List<LikeNotice> getLikeNotice() {
-        return noticeClient.getLikeNotice();
-    }
+    List<Collect> getCollect();
 
-    public List<CommentNotice> getCommentNotice() {
-        return noticeClient.getCommentNotice();
-    }
-
-    public String getVideo() {
-        List<Video> list = videoMapper.selectList(null);
-        String response = "";
-        for (Video video : list) {
-            response += video.getName() + ",";
-        }
-        return response;
-    }
-
-    public List<VideoEnsemble> getVideoEnsemble() {
-        return userClient.getVideoEnsemble();
-    }
-
-    public List<AddToEnsemble> getAddToEnsemble() {
-        return addToEnsembleMapper.selectList(null);
-    }
-
-    public List<VideoData> getVideoData() {
-        return videoDataMapper.selectList(null);
-    }
-
-    public List<CollectGroup> getCollectGroup() {
-        return collectGroupMapper.selectList(null);
-    }
-
-    public List<Comment> getComment() {
-        return commentMapper.selectList(null);
-    }
-
-    public List<Danmaku> getDanmaku() {
-        return danmakuMapper.selectList(null);
-    }
-
-    public List<Like> getCommentLike() {
-        return likeMapper.selectList(null);
-    }
-
-    public List<Follow> getFollow() {
-        return userClient.getFollow();
-    }
-
-    public List<User> getUser() {
-        return userClient.getUser();
-    }
-
-    public List<Play> getHistoryPlay() {
-        return playMapper.selectList(null);
-    }
-
-    public List<Collect> getCollect() {
-        return collectMapper.selectList(null);
-    }
-
-    public List<DynamicToUser> getDynamicToUser() {
-        return noticeClient.getDynamicToUser();
-    }
+    List<DynamicToUser> getDynamicToUser();
 }
